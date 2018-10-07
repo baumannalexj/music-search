@@ -6,14 +6,16 @@ import {RouterModule, Routes} from '@angular/router'
 import {LocationStrategy, HashLocationStrategy, APP_BASE_HREF} from '@angular/common'
 
 import { AppComponent } from './app.component';
-import { AlbumComponentComponent } from './album-component/album-component.component';
-import { ArtistComponentComponent } from './artist-component/artist-component.component';
+import { SearchComponent } from './search/search.component';
+import { ArtistComponent } from './artist/artist.component';
+import { AlbumComponent } from './album/album.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumComponentComponent,
-    ArtistComponentComponent
+    SearchComponent,
+    ArtistComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule
