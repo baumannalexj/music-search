@@ -9,9 +9,9 @@ import {AlbumComponent} from "../album/album.component";
 
 const routes: Routes = [
   {path: 'search', component: SearchComponent},
-  {path: 'artists', component: ArtistComponent},
-  {path: 'albums', component: AlbumComponent},
-  {path: 'tracks', component: TrackComponent},
+  {path: 'artists/:id', component: ArtistComponent},
+  {path: 'albums/:id', component: AlbumComponent},
+  {path: 'tracks/:id', component: TrackComponent},
 
 ];
 

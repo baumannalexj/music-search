@@ -48,7 +48,7 @@ export class SearchComponent implements OnInit {
       && response.tracks.items
       || null;
 
-    console.log(`results set to ${this.results}`)
+    console.log(`results set to ${JSON.stringify(this.results)}`)
 
   }
 
