@@ -1,3 +1,6 @@
+# Needs Spotify auth token
+need to populate SPOTIFY_BEARER_TOKEN for each session
+
 # MusicSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
