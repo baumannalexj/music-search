@@ -32,6 +32,8 @@ export class TrackComponent implements OnInit {
 
   renderTrack(response: any): void {
     this.track = response;
+
+    console.log(`results set to ${JSON.stringify(this.track)}`)
   }
 
 }

@@ -14,6 +14,14 @@ export class SpotifyService {
   constructor(public httpClient: HttpClient) {
   }
 
+  getArtist(id: string) {
+    return this.query(`/artists/${id}`);
+  }
+
+  getAlbum(id: string) {
+    return this.query(`/albums/${id}`);
+  }
+
   getTrack(id: string) {
     return this.query(`/tracks/${id}`);
   }
@@ -46,4 +54,5 @@ export class SpotifyService {
     return this.httpClient.get(queryUrl, options);
 
   }
+
 }
