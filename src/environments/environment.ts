@@ -9,7 +9,7 @@ export const environment = {
 
 export const spotify = {
   config: {
-    SPOTIFY_BEARER_TOKEN: "BQCBP579-ZmHEqUQBLn8n0kxKBmh16FSY_gyyAMLtlAN49ubPp5sr_oWnnMY3XUHYM25pDlDq8Cwb_7AWf6P4MH_ZN1i5Qc4FKJoQZGKfJI4bzUtQ84-4gCtMtH8Itp2P1H5hgtKhAg_-bqDKw",
+    SPOTIFY_BEARER_TOKEN: "BQBLBkwYSZAaYrvV53xRB0ghCijiIwrm9y5UrVaSk0v4Ydna5j-8E8-KOaAkZyf9FZm-ukD8_EeT-rAk3nVZfi_A_yOms6GInmQ9M8xLRDfjr7LQTeqzQn8kQUj4NIGYFHJ2EI78geVaFcoHUw",
     BASE_URL: "https://api.spotify.com/v1"
   }
 };
