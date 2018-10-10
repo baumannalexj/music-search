@@ -1,7 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-import {spotify} from '../../environments/environment'
+import {SpotifyConfig} from '../../environments/environment';
+import {SpotifyAPIKey} from '../../environments/spotifyApiKey';
 
 const TRACK_QUERY_TYPE = "track";
 
@@ -37,9 +38,10 @@ export class SpotifyService {
     ]);
   }
 
+  //pathAction ex: `/search`
   query(pathAction: string, params?: Array<string>) {
 
-    let queryUrl = `${spotify.config.BASE_URL}${pathAction}`; //pathAction ~ /search
+    let queryUrl = `${SpotifyConfig.BASE_URL}${pathAction}`;
 
     if (params) {
       queryUrl += `?${params.join("&")}`
@@ -47,7 +49,7 @@ export class SpotifyService {
 
     const options = {
       headers: {
-        Authorization: `Bearer ${spotify.config.SPOTIFY_BEARER_TOKEN}`
+        Authorization: `Bearer ${SpotifyAPIKey}`
       }
     };
 

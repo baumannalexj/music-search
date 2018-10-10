@@ -7,11 +7,9 @@ export const environment = {
 
 };
 
-export const spotify = {
-  config: {
-    SPOTIFY_BEARER_TOKEN: "BQBLBkwYSZAaYrvV53xRB0ghCijiIwrm9y5UrVaSk0v4Ydna5j-8E8-KOaAkZyf9FZm-ukD8_EeT-rAk3nVZfi_A_yOms6GInmQ9M8xLRDfjr7LQTeqzQn8kQUj4NIGYFHJ2EI78geVaFcoHUw",
-    BASE_URL: "https://api.spotify.com/v1"
-  }
+export const SpotifyConfig = {
+  SPOTIFY_BEARER_TOKEN: "BQBLBkwYSZAaYrvV53xRB0ghCijiIwrm9y5UrVaSk0v4Ydna5j-8E8-KOaAkZyf9FZm-ukD8_EeT-rAk3nVZfi_A_yOms6GInmQ9M8xLRDfjr7LQTeqzQn8kQUj4NIGYFHJ2EI78geVaFcoHUw",
+  BASE_URL: "https://api.spotify.com/v1"
 };
 
 /*
