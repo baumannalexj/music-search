@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 
-import {SpotifyService} from "../service/spotify.service";
+import {SpotifyService} from "../../service/spotify.service";
 
 @Component({
   selector: 'app-search',

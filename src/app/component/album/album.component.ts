@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {SpotifyService} from "../service/spotify.service";
+import {SpotifyService} from "../../service/spotify.service";
 import {Router, ActivatedRoute} from '@angular/router';
+import {OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',
   styleUrls: ['./album.component.css']
 })
-export class AlbumComponent implements OnInit {
+export class AlbumComponent implements OnInit, OnDestroy {
 
   private id: string;
   private album: Object;
@@ -28,6 +29,10 @@ export class AlbumComponent implements OnInit {
     this.spotifyService
       .getAlbum(this.id)
       .subscribe(response => this.renderAlbum(response));
+  }
+
+  ngOnDestroy(): void {
+    //unsubscribe
   }
 
   renderAlbum(response: any): void {
