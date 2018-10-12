@@ -1,15 +1,7 @@
-# Needs Spotify auth token
-need to populate SPOTIFY_BEARER_TOKEN for each session
+`npm install`
 
-## Development server
+do npm start instead of ng serve so the API key is generated correctly
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`npm start`
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
+`http://localhost:4200`
